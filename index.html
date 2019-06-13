@@ -19,12 +19,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <style>
-        .carItem {
-            height: 200px;
-            width: 200px;
+        .owl-item {
+            height: 200px !important;
+            width: 200px !important;
+            margin: 5px !important;
             background-color: #333;
-            margin: auto;
         }
+
     </style>
 </head>
 
@@ -34,41 +35,55 @@
     <div class="container-fluid h-100">
         <div class="container h-100">
             <div class="row h-100">
-                <div class="owl-carousel col-12">
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
-                    <div class="carItem"> Your Content </div>
+                <div class="owl-carousel owl-theme owl-loaded">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                            <div class="owl-item"></div>
+                        </div>
+                    </div>
+                    <div class="owl-nav">
+                        <div class="owl-prev"></div>
+                        <div class="owl-next"></div>
+                    </div>
+                    <div class="owl-dots">
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /Start your project here-->
+        <!-- /Start your project here-->
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.js"></script>
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel();
-        });
-    </script>
-</body></html>
+        <script>
+            $(document).ready(function() {
+                $(".owl-carousel").owlCarousel();
+            });
+
+        </script>
+</body>
+
+</html>
